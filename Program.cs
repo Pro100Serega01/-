@@ -285,6 +285,9 @@ namespace ЛАБ1_2курсС_
                     x1 = int.Parse(Console.ReadLine());
                     Console.WriteLine("Введите число y: ");
                     y1 = int.Parse(Console.ReadLine());
+                    result = program.sum2(x1, y1);
+                    Console.WriteLine("Ответ: ");
+                    Console.WriteLine(result);
                     break;
                 case 10://УСЛОВИЯ 9
                     Console.WriteLine("Вы запустили задачу 9, раздел Условия");
