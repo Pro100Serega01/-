@@ -1,17 +1,15 @@
 ﻿using System;
-namespace ЛАБ2_1
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Basic_Class basic = new Basic_Class(true, false);
-            Console.WriteLine(basic.ToString());
-            Console.WriteLine($"Конъюнкция: {basic.CalculateConjunction()}");
+using ЛАБ2_2;
 
-            Dother_Class дочерний = new Dother_Class(true, true, "ДочернийКласс");
-            Console.WriteLine(dother.GetInfo());
-            Console.WriteLine($"Конъюнкция: {dother.CalculateConjunction()}");
-        }
+class Program
+{
+    static void Main()
+    {
+        Triangle triangle1 = new Triangle(3, 4, 5);
+        Console.WriteLine(triangle1.ToString());
+        Console.WriteLine($"Существование: {triangle1.Exists()}");
+
+        Triangle triangle2 = new Triangle(5, 4, 3);
+        Console.WriteLine($"Равенство треугольников: {triangle1 == triangle2}");
     }
 }
