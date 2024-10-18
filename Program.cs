@@ -10,8 +10,8 @@ namespace ЛАБ2_1
             Console.WriteLine($"Конъюнкция: {basic.CalculateConjunction()}");
 
             Dother_Class дочерний = new Dother_Class(true, true, "ДочернийКласс");
-            Console.WriteLine(дочерний.GetInfo());
-            Console.WriteLine($"Конъюнкция: {дочерний.CalculateConjunction()}");
+            Console.WriteLine(dother.GetInfo());
+            Console.WriteLine($"Конъюнкция: {dother.CalculateConjunction()}");
         }
     }
 }
